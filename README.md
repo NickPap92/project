@@ -7,8 +7,8 @@
 &nbsp;
 
 ### starter_se.py
->  **Basic parameters input**
-> **Variables**
+>  **Basic parameters input** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+> **Variables** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 > &nbsp;
 > **cpu**, type=str, value="atomic" [//]: # (Cpu type="atomic") &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
 > **cpu-freq**, type=int, value=1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[//]: # (Cpu frequency=4GHz) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
