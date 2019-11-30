@@ -10,7 +10,7 @@
 >  **Basic parameters input**
 > **Variables**
 > &nbsp;
-> **cpu**, type=str, value="atomic" &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[//]: # (Cpu type="atomic")
+> **cpu**, type=str, value="atomic" &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[//]: # (Cpu type="atomic")
 > **cpu-freq**, type=int, value=1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[//]: # (Cpu frequency=4GHz)
 > **mem-type**, type=str, value="DDR3\_1600_8x8 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[//]: # (DDR3, 1600 MT/s, Parameter: 256 Meg x 8, Configuration: 32 Meg x 8 x 8 banks)
 > **mem-channels**, type=int, value=2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [//]: # (Running on dual channel, NorthBridge Frequency=800MHz) 
