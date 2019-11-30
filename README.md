@@ -11,7 +11,7 @@
 > **Variables**
 > &nbsp;
 > **cpu**, type=str, value="atomic" [//]: # (Cpu type="atomic") &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-> **cpu-freq**, type=int, value=1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[//]: # (Cpu frequency=4GHz)
+> **cpu-freq**, type=int, value=1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[//]: # (Cpu frequency=4GHz) &nbsp; &nbsp; &nbsp; 
 > **mem-type**, type=str, value="DDR3\_1600_8x8 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[//]: # (DDR3, 1600 MT/s, Parameter: 256 Meg x 8, Configuration: 32 Meg x 8 x 8 banks)
 > **mem-channels**, type=int, value=2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [//]: # (Running on dual channel, NorthBridge Frequency=800MHz) 
 > **mem-ranks**, type=int, value=None &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[//]: # (Memory Rank - nT)
