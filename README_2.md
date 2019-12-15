@@ -290,7 +290,7 @@ Given 1kBL1d=1kBL1i=6kBL2
 
 cacheline*( (2\*32\*6\*L1d\*L1da\*(6^(L1da-3))) +(32\*6\*L1i\*L1ia\*(6^(L1da-3))) + (2048\*L2\*L2a) ) = X
 
-cacheline*(384\*(2\*L1d\*L1da\*(6^(L1da-3)) + L1i\*L1ia\*(6^(L1da-3)) + (2048\*L2\*L2a)) = X
+cacheline*(384\*(2\*L1d\*L1da\*(6^(L1da-3)) + (L1i\*L1ia\*(6^(L1da-3)) + (2048\*L2\*L2a)) = X
 
 Cost of the default proccessor: 64\*((384\*((2\*32\*2\*6) + (32\*2\*6)) + (2048\*8))) = X
 X = 458.752
@@ -348,7 +348,24 @@ We notice a similar trend here, so the Libm VFM cost will be same as Sjeng, at 2
 Besides Bzip benchmark, all of them can be optimized with a CPU costing less than the default configuration so that they have a higher CPI.
 
 &nbsp;
+
+Comparing the VFM costs vs the best performance costs for each benchmark that we found previously, we have:
+
+- Bzip: VFM = 1.196.416, Perf = 169.886.080
+- Mcf: VFM = 297.728, Perf = 3.544.576‬‬
+- Hmmer: VFM = 299.392 Perf = 14.172.928‬
+- Sjeng: VFM = 297.344 Perf = 14.188.928‬
+- Libm: VFM = 297.344 Perf = 1.196.800‬
+
+We can see that reduce the cost by a lot if we choose to go for a value for money route rather than a full performance one.
+
+&nbsp;
+Choosing which configuration better fits for each application, we need to take into account a lot of variables such as target group, physical limitations, weight out on what components we need to better focus, the ones that yield the best increase in performance as shown in the graphs of Step 2\_2 and decide on a cost that would make sense for the target group. It's a very hard and complex equation to be answered and this second Lab successfully managed to make us think as engineers instead of consumers. The possibilities of improving a CPU architecture compared to cost seem endless and it takes both intuition and carefully planning the design in order to get the best results.
+
+
+&nbsp;
 Bibliography used:
+- [Modeling and Optimization of Parallel and Distributed Embedded Systems](https://books.google.gr/books?id=aEpICgAAQBAJ&pg=PA136&lpg=PA136&dq=mm2+size+of+L1+cache&source=bl&ots=EpnXWUnnuM&sig=ACfU3U1aTvVXukW3rGH0Sf_9yP-CDPfYgg&hl=en&sa=X&ved=2ahUKEwiImaS1wbjmAhXJb5oKHQHUA6wQ6AEwDHoECAoQAQ#v=onepage&q=mm2%20size%20of%20L1%20cache&f=false)
 - [A look into CPU Cache](https://courses.cs.washington.edu/courses/cse378/09au/lectures/cse378au09-20.pdf)
 - [Zen 2 Architecture](https://www.anandtech.com/show/14525/amd-zen-2-microarchitecture-analysis-ryzen-3000-and-epyc-rome/5)
 - [Why is the L1 cache always smaller than the L2 cache](https://www.researchgate.net/post/Why_is_the_L1_cache_always_smaller_than_the_L2_cache_and_if_there_is_an_L3_why_is_the_L2_smaller_than_the_L3)
