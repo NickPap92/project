@@ -288,9 +288,9 @@ L1da/L1ia costing 6^2 36 times more than L2a.
 
 Given 1kBL1d=1kBL1i=6kBL2
 
-cacheline*( (2\*32\*6\*L1d\*L1da\*(6^(L1da-3))) +(32\*6\*L1i\*L1ia\*(6^(L1da-3))) + (2048\*L2\*L2a) ) = X
+cacheline*( (2\*32\*6\*L1d\*L1da\*(6^(|L1da-3|))) +(32\*6\*L1i\*L1ia\*(6^(|L1da-3|))) + (2048\*L2\*L2a) ) = X
 
-cacheline*(384\*(2\*L1d\*L1da\*(6^(L1da-3)) + (L1i\*L1ia\*(6^(L1da-3)) + (2048\*L2\*L2a)) = X
+cacheline*(384\*(2\*L1d\*L1da\*(6^(|L1da-3|)) + (L1i\*L1ia\*(6^(|L1da-3|)) + (2048\*L2\*L2a)) = X
 
 Cost of the default proccessor: 64\*((384\*((2\*32\*2\*6) + (32\*2\*6)) + (2048\*8))) = X
 X = 458.752
