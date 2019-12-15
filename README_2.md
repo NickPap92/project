@@ -357,7 +357,7 @@ Comparing the VFM costs vs the best performance costs for each benchmark that we
 - Sjeng: VFM = 297.344 Perf = 14.188.928‬
 - Libm: VFM = 297.344 Perf = 1.196.800‬
 
-We can see that reduce the cost by a lot if we choose to go for a value for money route rather than a full performance one.
+We can see that cost is easily reduced by a lot if we choose to go for a value for money route rather than a full performance one. By doing so, we get more than 85% of the performance route by only speding a fraction of the cost to manufacture such a CPU.
 
 &nbsp;
 Choosing which configuration better fits for each application, we need to take into account a lot of variables such as target group, physical limitations, weight out on what components we need to better focus, the ones that yield the best increase in performance as shown in the graphs of Step 2\_2 and decide on a cost that would make sense for the target group. It's a very hard and complex equation to be answered and this second Lab successfully managed to make us think as engineers instead of consumers. The possibilities of improving a CPU architecture compared to cost seem endless and it takes both intuition and carefully planning the design in order to get the best results.
